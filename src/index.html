@@ -8,100 +8,106 @@
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
+  <!-- Title Website -->
+   <title>Responsive || Coffee Website</title>
+
+   <!-- Fav Icon -->
+    <link rel="shortcut icon" href="/images/img-2.png" type="image/x-icon">
+
 </head>
 <body>
 
 <!-- Header Section -->
 
-    <section class="header_section w-[450px]">
-        <div class="header-wrap">
+    <section class="header_section pt-0" id="home">
+        <div class="container">
             <div class="background-image">
-                <div class="h-full" style="background-image: url(/images/banner-bg.png);">
-                    <div class="top-header flex justify-between px-[30px] h-[50px] items-center pt-5">
-                        <div class="single-box ">
-                            <h1 class="text-3xl text-white font-bold font-serif">Doze<span class="text-black">Cafe</span></h1>
-                        </div>
+                <div class="h-[100vh]  md:bg-cover md:bg-no-repeat" style="background-image: url(/images/banner-bg.png);">
+                    <header class="top-header flex justify-between px-[30px] h-[50px] items-center pt-5">
                         <div class="single-box">
-                            <ul class=" hidden">
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Coffes</a></li>
-                                <li><a href="#">Shop</a></li>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">Contact</a></li>
+                            <h1 class="text-4xl lg:text-5xl text-white font-bold font-fontLobster">Doze<span class="text-black">Cafe</span></h1>
+                        </div>
+                        <div class="single-box md:flex md:items-center md:gap-5 md:text-lg md:font-semibold">
+                            <ul class=" hidden md:flex md:items-center md:gap-3 lg:gap-5">
+                                <li><a class="heading-hover" href="#home">Home</a></li>
+                                <li><a class="heading-hover" href="#about">About</a></li>
+                                <li><a class="heading-hover" href="#coffe">Coffes</a></li>
+                                <li><a class="heading-hover" href="#shop">Shop</a></li>
+                                <li><a class="heading-hover" href="#blog">Blog</a></li>
+                                <li><a class="heading-hover" href="#contact">Contact</a></li>
                             </ul>
-                            <div class="loging hidden">
-                                <p> <i class="fa-solid fa-user"></i> Login</p>
-                                <i class="fa-solid fa-magnifying-glass"></i>
+                            <div class="loging hidden md:flex md:items-center md:gap-5">
+                                <p class=" hover:text-red-500  heading-hover cursor-pointer"> <i class="fa-solid fa-user"></i> Login</p>
+                                <i class="fa-solid fa-magnifying-glass cursor-pointer hover:text-red-500  heading-hover"></i>
                             </div>
-                            <div class="icon text-3xl bg-white px-3 py-1 rounded">
-                                <i class="fa-solid fa-bars hover:text-red-500"></i>
+                            <div class="icon text-3xl bg-white px-3 py-1 rounded md:hidden">
+                                <i class="fa-solid fa-bars cursor-pointer hover:text-red-500"></i>
                             </div>
                         </div>
-                    </div>
+                    </header>
                     <!-- Swiper -->
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="header px-[30px] py-[50px]">
-                                <div class="img-box my-[10px]">
-                                    <img class="w-full" src="/images/banner-img.png" alt="">
-                                </div>
-                                <div class="content">
-                                    <h1 class="text-4xl text-black font-bold font-serif my-[10px]">coffee</h1>
-                                    <p class="text-white text-xl font-semibold my-[10px]">Tasty Of DozeCafe</p>
-                                    <p class="text-slate-600 my-[10px]">More or less normal distribution of letters as apposed to using</p>
-                                    <div class="button flex my-[20px] gap-x-5">
-                                        <div class="btn-box">
-                                            <a class="px-[40px] py-3 text-white font-semibold text-lg rounded bg-yellow-400 hover:bg-black" href="#">About Us</a>
-                                        </div>
-                                        <div class="btn-box">
-                                            <a class="px-[40px] py-3 text-white font-semibold text-lg rounded bg-slate-800" href="#">Call Now</a>
+                            <div class="swiper-slide">
+                                <div class="header px-[30px] flex flex-col md:flex-row md:mt-[100px] items-center justify-between">
+                                    <div class="img-box my-[10px] basis-[50%] ">
+                                        <img class="w-full lg:w-[400px]" src="/images/banner-img.png" alt="">
+                                    </div>
+                                    <div class="content basis-[50%]">
+                                        <h1 class="text-4xl text-black font-bold font-fontSpicyRice my-[10px]">coffee</h1>
+                                        <p class="text-white text-xl font-semibold my-[10px] md:text-red-500 font-fontDancingScript">Tasty Of DozeCafe</p>
+                                        <p class="text-slate-600 my-[10px]">More or less normal distribution of letters as apposed to using</p>
+                                        <div class="button flex my-[20px] gap-x-5">
+                                            <div class="btn-box">
+                                                <a class="header-btn bg-brownColor" href="#">About Us</a>
+                                            </div>
+                                            <div class="btn-box">
+                                                <a class="header-btn" href="#">Call Now</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="header px-[30px] py-[50px]">
-                                <div class="img-box my-[10px]">
-                                    <img class="w-full" src="/images/banner-img.png" alt="">
-                                </div>
-                                <div class="content">
-                                    <h1 class="text-4xl text-black font-bold font-serif my-[10px]">coffee</h1>
-                                    <p class="text-white text-xl font-semibold my-[10px]">Tasty Of DozeCafe</p>
-                                    <p class="text-slate-600 my-[10px]">More or less normal distribution of letters as apposed to using</p>
-                                    <div class="button flex my-[20px] gap-x-5">
-                                        <div class="btn-box">
-                                            <a class="px-[40px] py-3 text-white font-semibold text-lg rounded bg-yellow-400" href="#">About Us</a>
-                                        </div>
-                                        <div class="btn-box">
-                                            <a class="px-[40px] py-3 text-white font-semibold text-lg rounded bg-slate-800" href="#">Call Now</a>
+                            <div class="swiper-slide">
+                                <div class="header px-[30px]  flex-col md:flex-row md:mt-[100px] flex items-center justify-between">
+                                    <div class="img-box my-[10px] basis-[50%]">
+                                        <img class="w-full lg:w-[400px]" src="/images/banner-img.png" alt="">
+                                    </div>
+                                    <div class="content basis-[50%]">
+                                        <h1 class="text-4xl text-black font-bold font-fontSpicyRice my-[10px]">coffee</h1>
+                                        <p class="text-white text-xl font-semibold my-[10px] md:text-red-500 font-fontDancingScript">Tasty Of DozeCafe</p>
+                                        <p class="text-slate-600 my-[10px]">More or less normal distribution of letters as apposed to using</p>
+                                        <div class="button flex my-[20px] gap-x-5">
+                                            <div class="btn-box">
+                                                <a class="header-btn bg-brownColor" href="#">About Us</a>
+                                            </div>
+                                            <div class="btn-box">
+                                                <a class="header-btn" href="#">Call Now</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="header px-[30px] py-[50px]">
-                                <div class="img-box my-[10px]">
-                                    <img class="w-full" src="/images/banner-img.png" alt="">
-                                </div>
-                                <div class="content">
-                                    <h1 class="text-4xl text-black font-bold font-serif my-[10px]">coffee</h1>
-                                    <p class="text-white text-xl font-semibold my-[10px]">Tasty Of DozeCafe</p>
-                                    <p class="text-slate-600 my-[10px]">More or less normal distribution of letters as apposed to using</p>
-                                    <div class="button flex my-[20px] gap-x-5">
-                                        <div class="btn-box">
-                                            <a class="px-[40px] py-3 text-white font-semibold text-lg rounded bg-yellow-400" href="#">About Us</a>
-                                        </div>
-                                        <div class="btn-box">
-                                            <a class="px-[40px] py-3 text-white font-semibold text-lg rounded bg-slate-800" href="#">Call Now</a>
+                            <div class="swiper-slide">
+                                <div class="header px-[30px]  flex-col md:flex-row md:mt-[100px] flex items-center justify-between">
+                                    <div class="img-box my-[10px] md:basis-[50%]">
+                                        <img class="w-full lg:w-[400px]" src="/images/banner-img.png" alt="">
+                                    </div>
+                                    <div class="content md:basis-[50%]">
+                                        <h1 class="text-4xl text-black font-bold font-fontSpicyRice my-[10px]">coffee</h1>
+                                        <p class="text-white text-xl font-semibold my-[10px] md:text-red-500 font-fontDancingScript">Tasty Of DozeCafe</p>
+                                        <p class="text-slate-600 my-[10px]">More or less normal distribution of letters as apposed to using</p>
+                                        <div class="button flex my-[20px] gap-x-5">
+                                            <div class="btn-box">
+                                                <a class="header-btn bg-brownColor" href="#">About Us</a>
+                                            </div>
+                                            <div class="btn-box">
+                                                <a class="header-btn" href="#">Call Now</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
                         </div>
                         <div class="swiper-pagination"></div>
                     </div>
@@ -113,147 +119,147 @@
 
 <!-- Offer Section -->
 
-    <Section class="offer-section w-[450px] px-[30px] py-[50px]">
-        <div class="offer-wrap">
+    <Section class="offer-section" id="coffe">
+        <div class="container">
             <div class="heading text-center">
-                <h1 class="font-bold font-serif text-4xl">Our Coffee Offer</h1>
+                <h1 class="font-bold font-fontSpicyRice text-5xl">Our Coffee Offer</h1>
             </div>
-            <div class="icon text-center text-red-400 my-3">
-                <i class="fa-solid fa-circle"></i>
-                <i class="fa-solid fa-circle"></i>
-                <i class="fa-solid fa-circle"></i>
+            <div class="icon text-center flex items-center gap-[10px] justify-center text-red-400 my-3">
+                <i class="fa-solid fa-circle icon-hover"></i>
+                <i class="fa-solid fa-circle icon-hover"></i>
+                <i class="fa-solid fa-circle icon-hover"></i>
             </div>
 
                  <!-- Swiper -->
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <div class="row-box my-[20px]">
-                        <div class="single-box basis-[100%] my-[30px]">
-                            <img class="w-full" src="/images/img-1.png" alt="">
+                    <div class="row-box my-[20px] md:flex md:flex-wrap md:justify-between">
+                        <div class="single-box content-hover basis-[100%] md:basis-[48%] xl:basis-[24%] my-[30px]">
+                            <img class="w-full image-hover" src="/images/img-1.png" alt="">
                             <div class="content my-[10px] text-center">
-                                <h1 class="text-3xl font-bold ">Types Of Coffee</h1>
-                                <p class="text-slate-700 my-2">Looking at it,s layout The Point Of</p>
+                                <h1 class="text-3xl font-bold xl:text-xl font-fontLobster">Types Of Coffee</h1>
+                                <p class="text-slate-700 my-2 font-fontDancingScript">Looking at it,s layout The Point Of</p>
                                 <div class="btn my-[20px]">
-                                    <a class="text-lg font-semibold border-2 border-red-500 px-[40px] py-2 rounded" href="#">Read More</a>
+                                    <a class="btn-hover" href="#">Read More</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="single-box basis-[100%] my-[30px]">
-                            <img class="w-full" src="/images/img-2.png" alt="">
+                        <div class="single-box content-hover basis-[100%] md:basis-[48%] xl:basis-[24%] my-[30px]">
+                            <img class="w-full image-hover" src="/images/img-2.png" alt="">
                             <div class="content my-[10px] text-center">
-                                <h1 class="text-3xl font-bold ">Bean varieties</h1>
-                                <p class="text-slate-700 my-2">Looking at it,s layout The Point Of</p>
+                                <h1 class="text-3xl font-bold xl:text-xl font-fontLobster">Bean varieties</h1>
+                                <p class="text-slate-700 my-2 font-fontDancingScript">Looking at it,s layout The Point Of</p>
                                 <div class="btn my-[20px]">
-                                    <a class="text-lg font-semibold border-2 border-red-500 px-[40px] py-2 rounded" href="#">Read More</a>
+                                    <a class="btn-hover" href="#">Read More</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="single-box basis-[100%] my-[30px]">
-                            <img class="w-full" src="/images/img-3.png" alt="">
+                        <div class="single-box content-hover basis-[100%] md:basis-[48%] xl:basis-[24%] my-[30px]">
+                            <img class="w-full image-hover" src="/images/img-3.png" alt="">
                             <div class="content my-[10px] text-center">
-                                <h1 class="text-3xl font-bold ">Coffee & Pastry</h1>
-                                <p class="text-slate-700 my-2">Looking at it,s layout The Point Of</p>
+                                <h1 class="text-3xl font-bold xl:text-xl font-fontLobster">Coffee & Pastry</h1>
+                                <p class="text-slate-700 my-2 font-fontDancingScript">Looking at it,s layout The Point Of</p>
                                 <div class="btn my-[20px]">
-                                    <a class="text-lg font-semibold border-2 border-red-500 px-[40px] py-2 rounded" href="#">Read More</a>
+                                    <a class="btn-hover" href="#">Read More</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="single-box basis-[100%] my-[30px]">
-                            <img class="w-full" src="/images/img-4.png" alt="">
+                        <div class="single-box content-hover basis-[100%] md:basis-[48%] xl:basis-[24%] my-[30px]">
+                            <img class="w-full image-hover" src="/images/img-4.png" alt="">
                             <div class="content my-[10px] text-center">
-                                <h1 class="text-3xl font-bold ">Coffee To Go</h1>
-                                <p class="text-slate-700 my-2">Looking at it,s layout The Point Of</p>
+                                <h1 class="text-3xl font-bold xl:text-xl font-fontLobster">Coffee To Go</h1>
+                                <p class="text-slate-700 my-2 font-fontDancingScript">Looking at it,s layout The Point Of</p>
                                 <div class="btn my-[20px]">
-                                    <a class="text-lg font-semibold border-2 border-red-500 px-[40px] py-2 rounded" href="#">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="row-box my-[20px]">
-                        <div class="single-box basis-[100%] my-[30px]">
-                            <img class="w-full" src="/images/img-1.png" alt="">
-                            <div class="content my-[10px] text-center">
-                                <h1 class="text-3xl font-bold ">Types Of Coffee</h1>
-                                <p class="text-slate-700 my-2">Looking at it,s layout The Point Of</p>
-                                <div class="btn my-[20px]">
-                                    <a class="text-lg font-semibold border-2 border-red-500 px-[40px] py-2 rounded" href="#">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="single-box basis-[100%] my-[30px]">
-                            <img class="w-full" src="/images/img-2.png" alt="">
-                            <div class="content my-[10px] text-center">
-                                <h1 class="text-3xl font-bold ">Bean varieties</h1>
-                                <p class="text-slate-700 my-2">Looking at it,s layout The Point Of</p>
-                                <div class="btn my-[20px]">
-                                    <a class="text-lg font-semibold border-2 border-red-500 px-[40px] py-2 rounded" href="#">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="single-box basis-[100%] my-[30px]">
-                            <img class="w-full" src="/images/img-3.png" alt="">
-                            <div class="content my-[10px] text-center">
-                                <h1 class="text-3xl font-bold ">Coffee & Pastry</h1>
-                                <p class="text-slate-700 my-2">Looking at it,s layout The Point Of</p>
-                                <div class="btn my-[20px]">
-                                    <a class="text-lg font-semibold border-2 border-red-500 px-[40px] py-2 rounded" href="#">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="single-box basis-[100%] my-[30px]">
-                            <img class="w-full" src="/images/img-4.png" alt="">
-                            <div class="content my-[10px] text-center">
-                                <h1 class="text-3xl font-bold ">Coffee To Go</h1>
-                                <p class="text-slate-700 my-2">Looking at it,s layout The Point Of</p>
-                                <div class="btn my-[20px]">
-                                    <a class="text-lg font-semibold border-2 border-red-500 px-[40px] py-2 rounded" href="#">Read More</a>
+                                    <a class="btn-hover" href="#">Read More</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="row-box my-[20px]">
-                        <div class="single-box basis-[100%] my-[30px]">
-                            <img class="w-full" src="/images/img-1.png" alt="">
+                    <div class="row-box my-[20px] md:flex md:flex-wrap md:justify-between">
+                        <div class="single-box content-hover basis-[100%] md:basis-[48%] xl:basis-[24%] my-[30px]">
+                            <img class="w-full image-hover" src="/images/img-1.png" alt="">
                             <div class="content my-[10px] text-center">
-                                <h1 class="text-3xl font-bold ">Types Of Coffee</h1>
-                                <p class="text-slate-700 my-2">Looking at it,s layout The Point Of</p>
+                                <h1 class="text-3xl font-bold xl:text-xl font-fontLobster">Types Of Coffee</h1>
+                                <p class="text-slate-700 my-2 font-fontDancingScript">Looking at it,s layout The Point Of</p>
                                 <div class="btn my-[20px]">
-                                    <a class="text-lg font-semibold border-2 border-red-500 px-[40px] py-2 rounded" href="#">Read More</a>
+                                    <a class="btn-hover" href="#">Read More</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="single-box basis-[100%] my-[30px]">
-                            <img class="w-full" src="/images/img-2.png" alt="">
+                        <div class="single-box content-hover basis-[100%] md:basis-[48%] xl:basis-[24%] my-[30px]">
+                            <img class="w-full image-hover" src="/images/img-2.png" alt="">
                             <div class="content my-[10px] text-center">
-                                <h1 class="text-3xl font-bold ">Bean varieties</h1>
-                                <p class="text-slate-700 my-2">Looking at it,s layout The Point Of</p>
+                                <h1 class="text-3xl font-bold xl:text-xl font-fontLobster">Bean varieties</h1>
+                                <p class="text-slate-700 my-2 font-fontDancingScript">Looking at it,s layout The Point Of</p>
                                 <div class="btn my-[20px]">
-                                    <a class="text-lg font-semibold border-2 border-red-500 px-[40px] py-2 rounded" href="#">Read More</a>
+                                    <a class="btn-hover" href="#">Read More</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="single-box basis-[100%] my-[30px]">
-                            <img class="w-full" src="/images/img-3.png" alt="">
+                        <div class="single-box content-hover basis-[100%] md:basis-[48%] xl:basis-[24%] my-[30px]">
+                            <img class="w-full image-hover" src="/images/img-3.png" alt="">
                             <div class="content my-[10px] text-center">
-                                <h1 class="text-3xl font-bold ">Coffee & Pastry</h1>
-                                <p class="text-slate-700 my-2">Looking at it,s layout The Point Of</p>
+                                <h1 class="text-3xl font-bold xl:text-xl font-fontLobster">Coffee & Pastry</h1>
+                                <p class="text-slate-700 my-2 font-fontDancingScript">Looking at it,s layout The Point Of</p>
                                 <div class="btn my-[20px]">
-                                    <a class="text-lg font-semibold border-2 border-red-500 px-[40px] py-2 rounded" href="#">Read More</a>
+                                    <a class="btn-hover" href="#">Read More</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="single-box basis-[100%] my-[30px]">
-                            <img class="w-full" src="/images/img-4.png" alt="">
+                        <div class="single-box content-hover basis-[100%] md:basis-[48%] xl:basis-[24%] my-[30px]">
+                            <img class="w-full image-hover" src="/images/img-4.png" alt="">
                             <div class="content my-[10px] text-center">
-                                <h1 class="text-3xl font-bold ">Coffee To Go</h1>
-                                <p class="text-slate-700 my-2">Looking at it,s layout The Point Of</p>
+                                <h1 class="text-3xl font-bold xl:text-xl font-fontLobster">Coffee To Go</h1>
+                                <p class="text-slate-700 my-2 font-fontDancingScript">Looking at it,s layout The Point Of</p>
                                 <div class="btn my-[20px]">
-                                    <a class="text-lg font-semibold border-2 border-red-500 px-[40px] py-2 rounded" href="#">Read More</a>
+                                    <a class="btn-hover" href="#">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="row-box my-[20px] md:flex md:flex-wrap md:justify-between">
+                        <div class="single-box content-hover basis-[100%] md:basis-[48%] xl:basis-[24%] my-[30px]">
+                            <img class="w-full image-hover" src="/images/img-1.png" alt="">
+                            <div class="content my-[10px] text-center">
+                                <h1 class="text-3xl font-bold xl:text-xl font-fontLobster">Types Of Coffee</h1>
+                                <p class="text-slate-700 my-2 font-fontDancingScript">Looking at it,s layout The Point Of</p>
+                                <div class="btn my-[20px]">
+                                    <a class="btn-hover" href="#">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-box content-hover basis-[100%] md:basis-[48%] xl:basis-[24%] my-[30px]">
+                            <img class="w-full image-hover" src="/images/img-2.png" alt="">
+                            <div class="content my-[10px] text-center">
+                                <h1 class="text-3xl font-bold xl:text-xl font-fontLobster">Bean varieties</h1>
+                                <p class="text-slate-700 my-2 font-fontDancingScript">Looking at it,s layout The Point Of</p>
+                                <div class="btn my-[20px]">
+                                    <a class="btn-hover" href="#">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-box content-hover basis-[100%] md:basis-[48%] xl:basis-[24%] my-[30px]">
+                            <img class="w-full image-hover" src="/images/img-3.png" alt="">
+                            <div class="content my-[10px] text-center">
+                                <h1 class="text-3xl font-bold xl:text-xl font-fontLobster">Coffee & Pastry</h1>
+                                <p class="text-slate-700 my-2 font-fontDancingScript">Looking at it,s layout The Point Of</p>
+                                <div class="btn my-[20px]">
+                                    <a class="btn-hover" href="#">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-box content-hover basis-[100%] md:basis-[48%] xl:basis-[24%] my-[30px]">
+                            <img class="w-full image-hover" src="/images/img-4.png" alt="">
+                            <div class="content my-[10px] text-center">
+                                <h1 class="text-3xl font-bold xl:text-xl font-fontLobster">Coffee To Go</h1>
+                                <p class="text-slate-700 my-2 font-fontDancingScript">Looking at it,s layout The Point Of</p>
+                                <div class="btn my-[20px]">
+                                    <a class="btn-hover" href="#">Read More</a>
                                 </div>
                             </div>
                         </div>
@@ -268,26 +274,26 @@
 
 <!-- Start About Section -->
 
-    <section class="about-section w-[450px] px-[30px] py-[50px]">
-        <div class="about-wrap">
+    <section class="about-section" id="about">
+        <div class="container">
             <div class="heading">
-                <h1 class="text-center text-4xl font-bold font-serif">About Our Shop</h1>
-                <div class="icon text-center text-red-400 my-3">
-                    <i class="fa-solid fa-circle"></i>
-                    <i class="fa-solid fa-circle"></i>
-                    <i class="fa-solid fa-circle"></i>
+                <h1 class="text-center text-5xl font-bold font-fontSpicyRice">About Our Shop</h1>
+                <div class="icon text-center text-red-400 my-3 flex justify-center gap-[10px]">
+                    <i class="fa-solid fa-circle icon-hover"></i>
+                    <i class="fa-solid fa-circle icon-hover"></i>
+                    <i class="fa-solid fa-circle icon-hover"></i>
                 </div>
             </div>
-            <div class="row-box">
-                <div class="content my-[10px]">
-                    <h1 class="text-2xl font-semibold">Coffee Distribution</h1>
+            <div class="row-box md:flex md:justify-between md:items-center md:mt-[20px]">
+                <div class="content my-[10px] md:basis-[48%]">
+                    <h1 class="text-3xl font-semibold font-fontLobster">Coffee Distribution</h1>
                     <p class="my-[10px] text-slate-500">has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editorhas a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editor</p>
                     <div class="btn my-[20px]">
-                        <a class="py-2 px-[30px] border-2 border-red-500 rounded hover:bg-yellow-400 transition delay-400 duration-300" href="#">Read More</a>
+                        <a class="btn-hover" href="#">Read More</a>
                     </div>
                 </div>
-                <div class="img-box my-[10px]">
-                    <img class="w-full" src="/images/about-img.png" alt="">
+                <div class="img-box mt-[20px] md:mt-0 md:basis-[48%] md:h-[350px]">
+                    <img class="content-hover md:h-[350px]" src="/images/about-img.png" alt="">
                 </div>
             </div>
         </div>
@@ -296,44 +302,48 @@
 
 <!-- Start Customar Section -->
 
-    <section class="customar-section w-[450px]">
-        <div class="customar-wrap">
-            <div class="h-full" style="background-image: url(/images/client-bg.png);">
-                <div class="content-wrap px-[30px] py-[50px] bg-red-400">
+    <section class="customar-section" id="customar">
+        <div class="container">
+            <div class="h-full  bg-center bg-contain bg-no-repeat" style="background-image: url(/images/client-bg.png);">
+                <div class="content-wrap px-[30px] py-[50px] bg-red-300 xl:bg-opacity-0 ">
                     <div class="heading py-[20px]">
-                        <h1 class="text-center font-bold text-4xl">What Syas Customars</h1>
-                        <div class="icon text-center text-red-800 my-3">
-                            <i class="fa-solid fa-circle"></i>
-                            <i class="fa-solid fa-circle"></i>
-                            <i class="fa-solid fa-circle"></i>
+                        <h1 class="text-center font-bold text-4xl font-fontSpicyRice">What Syas Customars</h1>
+                        <div class="icon text-center text-red-800 my-3 flex justify-center gap-[10px]">
+                            <i class="fa-solid fa-circle icon-hover"></i>
+                            <i class="fa-solid fa-circle icon-hover"></i>
+                            <i class="fa-solid fa-circle icon-hover"></i>
                         </div>
                     </div>
-                    <div class="customars my-[20px]">
-                        <div class="single-box my-[20px]">
-                            <div class="img-box">
+                    <div class="customars flex flex-col gap-[30px] mt-[20px] xl:px-[200px]">
+                        <div class="single-box flex flex-col md:flex-row md:justify-between items-center gap-[10px] text-center md:text-start p-[20px] xl:gap-5 customar-content">
+                            <div class="img-box image-hover md:basis-[30%]">
                                 <img src="/images/client-img1.png" alt="">
                             </div>
-                            <div class="content my-[10px]">
-                                <h1 class="text-3xl font-bold">Joy Moark</h1>
-                                <p class="text-slate-600 my-[10px]">now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancynow use Lorem Ipsum as their default model text,</p>
+                            <div class="content md:basis-[70%]">
+                                <h1 class="text-3xl xl:text-xl font-bold font-fontBebas">Joy Moark</h1>
+                                <p class="text-slate-600">now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancynow use Lorem Ipsum as their default model text,</p>
                             </div>
                         </div>
-                        <div class="single-box my-[20px]">
-                            <div class="img-box">
+                        <div class="single-box flex flex-col items-center gap-[10px] text-center p-[20px] xl:gap-5 customar-content md:flex-row
+                        md:justify-between
+                        md:text-start">
+                            <div class="img-box image-hover md:basis-[30%]">
                                 <img src="/images/client-img2.png" alt="">
                             </div>
-                            <div class="content my-[10px]">
-                                <h1 class="text-3xl font-bold">Mihacal</h1>
+                            <div class="content my-[10px] md:basis-[70%]">
+                                <h1 class="text-3xl xl:text-xl font-bold font-fontBebas">Mihacal</h1>
                                 <p class="text-slate-600 my-[10px]">now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancynow use Lorem Ipsum as their default model text,</p>
                             </div>
                         </div>
-                        <div class="single-box my-[20px]">
-                            <div class="img-box">
+                        <div class="single-box flex flex-col items-center gap-[10px] text-center p-[20px] xl:gap-5 customar-content md:flex-row
+                        md:justify-between
+                        md:text-start">
+                            <div class="img-box image-hover md:basis-[30%]">
                                 <img src="/images/client-img3.png" alt="">
                             </div>
-                            <div class="content my-[10px]">
-                                <h1 class="text-3xl font-bold">Uliya Den</h1>
-                                <p class="text-slate-600 my-[10px]">now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancynow use Lorem Ipsum as their default model text,</p>
+                            <div class="content md:basis-[70%]">
+                                <h1 class="text-3xl xl:text-xl font-bold font-fontBebas">Uliya Den</h1>
+                                <p class="text-slate-600">now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancynow use Lorem Ipsum as their default model text,</p>
                             </div>
                         </div>
                     </div>
@@ -345,44 +355,44 @@
 
 <!-- Start Blog Section -->
 
-    <section class="blog-section w-[450px] px-[30px]">
-        <div class="blog-wrap py-[50px]">
-            <div class="heading text-center my-[30px]">
-                <h1 class="text-3xl font-bold font-serif">Our Blog</h1>
-                <div class="icon my-[10px] text-red-400">
-                    <i class="fa-solid fa-circle"></i>
-                    <i class="fa-solid fa-circle"></i>
-                    <i class="fa-solid fa-circle"></i>
+    <section class="blog-section" id="blog">
+        <div class="container">
+            <div class="heading text-center">
+                <h1 class="text-5xl font-bold font-fontSpicyRice">Our Blog</h1>
+                <div class="icon my-[10px] text-red-400 flex justify-center gap-[10px]">
+                    <i class="fa-solid fa-circle icon-hover"></i>
+                    <i class="fa-solid fa-circle icon-hover"></i>
+                    <i class="fa-solid fa-circle icon-hover"></i>
                 </div>
             </div>
-            <div class="content-wrap">
-                <div class="single-box my-[30px] bg-slate-300">
+            <div class="content-wrap flex flex-col gap-[30px] md:gap-0 md:flex-row md:justify-between mt-[20px] md:mt-[30px]">
+                <div class="single-box flex flex-col gap-[10px] bg-slate-300 md:basis-[45%] content-hover">
                     <div class="img-box relative">
                         <div class="heading w-[100px] -mt-4 -ml-3 absolute">
-                            <p class="bg-red-600 text-white px-3 py-3 text-lg font-semibold rounded font-serif ">05 April</p>
+                            <p class="bg-red-600 text-white px-3 py-3 text-xl  rounded-md font-fontBebas content-hover">05 April</p>
                         </div>
-                        <img class="w-full " src="/images/blog-img1.png" alt="">
+                        <img class="w-full image-hover" src="/images/blog-img1.png" alt="">
                     </div>
-                     <div class="content py-[10px] px-[10px]">
-                        <h1 class="font-bold text-xl font-serif my-2">Prep Techniques coffee</h1>
-                        <p class="my-2">distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a moredistracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more</p>
-                        <div class="btn-box my-[20px]">
-                            <a class="px-[30px] py-2 border-2 border-red-500 text-lg font-semibold rounded hover:text-red-500" href="#">Read More</a>
+                     <div class="content px-[10px] pb-[20px]">
+                        <h1 class="font-bold text-xl font-fontLobster">Prep Techniques coffee</h1>
+                        <p class="">distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a moredistracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more</p>
+                        <div class="btn-box mt-[20px]">
+                            <a class="btn-hover" href="#">Read More</a>
                         </div>
                     </div>
                 </div>
-                <div class="single-box my-[30px] bg-slate-300">
+                <div class="single-box content-hover flex flex-col gap-[10px] bg-slate-300 md:basis-[45%]">
                     <div class="img-box relative">
                         <div class="heading w-[100px] -mt-4 -ml-3 absolute">
-                        <p class="bg-red-600 text-white px-3 py-3 text-lg font-semibold rounded font-serif ">05 April</p>
+                        <p class="bg-red-600 text-white px-3 py-3 text-lg font-semibold rounded-md font-fontBebas content-hover">05 April</p>
                        </div>
-                        <img class="w-full" src="/images/blog-img2.png" alt="">
+                        <img class="w-full image-hover" src="/images/blog-img2.png" alt="">
                     </div>
-                    <div class="content py-[10px] px-[10px]">
-                        <h1 class="font-bold text-xl font-serif my-2">Prep Techniques coffee</h1>
-                        <p class="my-2">distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a moredistracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more</p>
-                        <div class="btn-box my-[20px]">
-                            <a class="px-[30px] py-2 border-2 border-red-500 text-lg font-semibold rounded hover:text-red-500" href="#">Read More</a>
+                    <div class="content pb-[20px] px-[10px]">
+                        <h1 class="font-bold text-xl font-fontLobster my-2">Prep Techniques coffee</h1>
+                        <p class="">distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a moredistracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more</p>
+                        <div class="btn-box mt-[20px]">
+                            <a class="btn-hover" href="#">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -393,24 +403,24 @@
 
 <!-- Order Section -->
 
-    <section class="order-section w-[450px] px-[30px] py-[50px]">
-        <div class="order-wrap">
+    <section class="order-section" id="shop">
+        <div class="container">
             <div class="heading text-center my-[30px]">
-                <h1 class="text-3xl font-bold font-serif">Get In Touch</h1>
-                <div class="icon my-[10px] text-red-400">
-                    <i class="fa-solid fa-circle"></i>
-                    <i class="fa-solid fa-circle"></i>
-                    <i class="fa-solid fa-circle"></i>
+                <h1 class="text-5xl font-bold font-fontSpicyRice">Get In Touch</h1>
+                <div class="icon my-[10px] text-red-400 flex justify-center gap-[10px]">
+                    <i class="fa-solid fa-circle icon-hover"></i>
+                    <i class="fa-solid fa-circle icon-hover"></i>
+                    <i class="fa-solid fa-circle icon-hover"></i>
                 </div>
             </div>
-            <div class="box">
+            <div class="box text-center">
                 <form action="">
-                    <input class="w-full my-[10px] bg-slate-200 py-2 px-2 rounded-xl" type="text" placeholder="Your Name">
-                    <input class="w-full my-[10px] bg-slate-200 py-2 px-2 rounded-xl" type="email" placeholder="Your Email">
-                    <input class="w-full my-[10px] bg-slate-200 py-2 px-2 rounded-xl" type="number" placeholder="Your Phone">
-                    <input class="w-full my-[10px] bg-slate-200 py-6 px-2 rounded-xl" type="text" placeholder="Massage">
+                    <input class="w-full md:w-[70%] my-[10px] bg-slate-200 py-2 px-2 rounded-xl content-hover hover:border-greenColor" type="text" placeholder="Your Name">
+                    <input class="w-full md:w-[70%] my-[10px] bg-slate-200 py-2 px-2 rounded-xl content-hover hover:border-greenColor" type="email" placeholder="Your Email">
+                    <input class="w-full md:w-[70%] my-[10px] bg-slate-200 py-2 px-2 rounded-xl content-hover hover:border-greenColor" type="number" placeholder="Your Phone">
+                    <input class="w-full md:w-[70%] my-[10px] bg-slate-200 py-6 px-2 rounded-xl content-hover hover:border-greenColor" type="text" placeholder="Massage">
                     <div class="btn-box text-center">
-                        <input class="w-[150px] my-[10px] bg-red-200 py-3 px-2 rounded-xl text-lg font-semibold hover:bg-red-500" type="button" value="Send">
+                        <input class="w-[150px] btn-hover" type="button" value="Send">
                     </div>
                 </form>
             </div>
@@ -420,22 +430,22 @@
 
 <!-- Start Address Section -->
 
-    <section class="address-section w-[450px] py-[50px]">
-        <div class="address-wrap">
+    <section class="address-section" id="contact">
+        <div class="container">
             <div class="map-box h-[500px] my-[10px]">
                 <iframe class="h-full w-full" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Eiffel+Tower+Paris+France" frameborder="0"></iframe>
             </div>
             <div class="content">
-                <div class="" style="background-image: url(/images/footer-bg.png);">
-                    <div class="details pt-[50px] text-center px-[30px]">
-                        <h1 class="text-white font-bold text-3xl">Address</h1>
-                        <p class="my-[20px] text-white">here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use</p>
-                        <p class="my-1 text-white"><i class="fa-solid fa-square-phone"></i> +880 1959948542</p>
-                        <p class="my-1 text-white"> <i class="fa-regular fa-envelope"></i> kmtanvir1111@gmail.com</p>
-                        <div class="email-box flex py-2">
-                            <input class="w-full px-3 py-2" type="email" placeholder="Your Email">
+                <div class=" bg-center " style="background-image: url(/images/footer-bg.png);">
+                    <div class="details text-center p-[30px] flex flex-col gap-[10px]">
+                        <h1 class="text-white text-4xl font-fontProtest">Address</h1>
+                        <p class="text-white font-fontDancingScript">here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use</p>
+                        <p class=" text-white cursor-pointer hover:text-redColor"><i class="fa-solid fa-square-phone "></i> +880 1959948542</p>
+                        <p class="text-white cursor-pointer hover:text-redColor"> <i class="fa-regular fa-envelope"></i> kmtanvir1111@gmail.com</p>
+                        <div class="email-box flex py-2 md:justify-center">
+                            <input class="w-full md:w-[60%] px-3 py-2" type="email" placeholder="Your Email">
                             <div class="icon bg-red-400 h-full py-2 px-5 -ml-[54px]">
-                                <a href="#"><i class="fa-regular fa-paper-plane "></i></a>
+                                <a href="#"><i class="fa-regular fa-paper-plane icon-hover"></i></a>
                             </div>
                         </div>
                     </div>
@@ -447,16 +457,22 @@
 
 <!-- Start Footer Section -->
 
-    <section class="footer-section w-[450px] px-[30px] bg-red-400">
-        <div class="footer-wrap py-[20px] text-center">
-            <div class="social-link gap-2 mb-5">
-                <a class="bg-white px-2 py-2 rounded-full" href="#"><i class="fa-brands fa-facebook text-lg text-red-500 hover:text-black"></i></a>
-                <a class="bg-white px-2 py-2 rounded-full" href="#"><i class="fa-brands fa-instagram text-lg text-red-500 hover:text-black"></i></a>
-                <a class="bg-white px-2 py-2 rounded-full" href="#"><i class="fa-brands fa-linkedin text-lg text-red-500 hover:text-black"></i></a>
-                <a class="bg-white px-2 py-2 rounded-full" href="#"><i class="fa-brands fa-twitter text-lg text-red-500 hover:text-black"></i></a>
+    <section class="footer-section" id="footer">
+        <div class="container text-center md:flex md:justify-between md:items-center">
+            <div class="social-link gap-2 md:hidden">
+                <a class="" href="#"><i class="fa-brands fa-facebook text-sm text-red-500 hover:text-yellowColor icon-hover border-2 border-greenColor rounded-full hover:border-yellowColor"></i></a>
+                <a class="" href="#"><i class="fa-brands fa-instagram text-sm text-red-500 hover:text-yellowColor icon-hover border-2 border-greenColor rounded-full hover:border-yellowColor"></i></a>
+                <a class="" href="#"><i class="fa-brands fa-linkedin text-sm text-red-500 hover:text-yellowColor icon-hover border-2 border-greenColor rounded-full hover:border-yellowColor"></i></a>
+                <a class="" href="#"><i class="fa-brands fa-twitter text-sm text-red-500 hover:text-yellowColor icon-hover border-2 border-greenColor rounded-full hover:border-yellowColor"></i></a>
             </div>
             <div class="copyright">
-                <p class="text-white">&copy; 2020 All Rights Reseved. Design by Free html Templates</p>
+                <p class="text-darkColorLight text-sm">&copy; 2020 All Rights Reseved. Design by Free html Templates</p>
+            </div>
+            <div class="social-link gap-2 hidden md:block">
+                <a class="" href="#"><i class="fa-brands fa-facebook text-sm text-red-500 hover:text-yellowColor icon-hover border-2 border-greenColor rounded-full hover:border-yellowColor"></i></a>
+                <a class="" href="#"><i class="fa-brands fa-instagram text-sm text-red-500 hover:text-yellowColor icon-hover border-2 border-greenColor rounded-full hover:border-yellowColor"></i></a>
+                <a class="" href="#"><i class="fa-brands fa-linkedin text-sm text-red-500 hover:text-yellowColor icon-hover border-2 border-greenColor rounded-full hover:border-yellowColor"></i></a>
+                <a class="" href="#"><i class="fa-brands fa-twitter text-sm text-red-500 hover:text-yellowColor icon-hover border-2 border-greenColor rounded-full hover:border-yellowColor"></i></a>
             </div>
         </div>
     </section>

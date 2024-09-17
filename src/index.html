@@ -22,38 +22,41 @@
     <section class="header_section pt-0" id="home">
         <div class="container">
             <div class="background-image">
-                <div class="h-[100vh]  md:bg-cover md:bg-no-repeat" style="background-image: url(/images/banner-bg.png);">
-                    <header class="top-header flex justify-between px-[30px] h-[50px] items-center pt-5">
+                <div class="h-full md:h-[100vh] md:bg-cover md:bg-no-repeat" style="background-image: url(/images/banner-bg.png);">
+                    <header class="top-header flex justify-between relative px-[30px] h-[50px] items-center pt-5">
                         <div class="single-box">
                             <h1 class="text-4xl lg:text-5xl text-white font-bold font-fontLobster">Doze<span class="text-black">Cafe</span></h1>
                         </div>
-                        <div class="single-box md:flex md:items-center md:gap-5 md:text-lg md:font-semibold">
-                            <ul class=" hidden md:flex md:items-center md:gap-3 lg:gap-5">
-                                <li><a class="heading-hover" href="#home">Home</a></li>
-                                <li><a class="heading-hover" href="#about">About</a></li>
-                                <li><a class="heading-hover" href="#coffe">Coffes</a></li>
-                                <li><a class="heading-hover" href="#shop">Shop</a></li>
-                                <li><a class="heading-hover" href="#blog">Blog</a></li>
-                                <li><a class="heading-hover" href="#contact">Contact</a></li>
+                        <div class=" hidden single-box absolute top-0 md:pt-3 left-0 w-full border-b-2 sm:bg-black sm:text-whiteColor md:text-blackColor sm:z-30 sm:h-[100vh] md:h-[50px] md:bg-transparent border-yellowColor py-14  md:block md:static md:py-0 md:border-none md:w-auto md:ml-auto md:gap-5 md:text-lg md:font-semibold" id="nav-menu">
+                            <ul class="flex flex-col items-center gap-3 md:flex-row lg:gap-5">
+                                <li><a class="heading-hover nav__link" href="#home">Home</a></li>
+                                <li><a class="heading-hover nav__link" href="#about">About</a></li>
+                                <li><a class="heading-hover nav__link" href="#coffe">Coffes</a></li>
+                                <li><a class="heading-hover nav__link" href="#shop">Shop</a></li>
+                                <li><a class="heading-hover nav__link" href="#blog">Blog</a></li>
+                                <li><a class="heading-hover nav__link" href="#contact">Contact</a></li>
+                                <div class="loging hidden md:flex md:items-center md:gap-5 nav__link">
+                                    <p class=" hover:text-red-500  heading-hover cursor-pointer"> <i class="fa-solid fa-user"></i> Login</p>
+                                    <i class="fa-solid fa-magnifying-glass cursor-pointer hover:text-red-500  heading-hover"></i>
+                                </div>
                             </ul>
-                            <div class="loging hidden md:flex md:items-center md:gap-5">
-                                <p class=" hover:text-red-500  heading-hover cursor-pointer"> <i class="fa-solid fa-user"></i> Login</p>
-                                <i class="fa-solid fa-magnifying-glass cursor-pointer hover:text-red-500  heading-hover"></i>
+                            <div class="absolute top-[0.7rem] right-4 text-2xl cursor-pointer md:hidden" id="nav-close">
+                                <i class="fa-solid fa-xmark hover:text-secondaryColor"></i>
                             </div>
-                            <div class="icon text-3xl bg-white px-3 py-1 rounded md:hidden">
-                                <i class="fa-solid fa-bars cursor-pointer hover:text-red-500"></i>
-                            </div>
+                        </div>
+                        <div class="icon text-3xl bg-white px-3 py-1 rounded md:hidden" id="manubar">
+                            <i class="fa-solid fa-bars cursor-pointer hover:text-red-500"></i>
                         </div>
                     </header>
                     <!-- Swiper -->
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <div class="header px-[30px] flex flex-col md:flex-row md:mt-[100px] items-center justify-between">
-                                    <div class="img-box my-[10px] basis-[50%] ">
+                                <div class="header px-[30px] h-full md:h-[100vh] flex flex-col md:flex-row justify-center items-center">
+                                    <div class="img-box md:basis-[50%]">
                                         <img class="w-full lg:w-[400px]" src="/images/banner-img.png" alt="">
                                     </div>
-                                    <div class="content basis-[50%]">
+                                    <div class="content md:basis-[50%]">
                                         <h1 class="text-4xl text-black font-bold font-fontSpicyRice my-[10px]">coffee</h1>
                                         <p class="text-white text-xl font-semibold my-[10px] md:text-red-500 font-fontDancingScript">Tasty Of DozeCafe</p>
                                         <p class="text-slate-600 my-[10px]">More or less normal distribution of letters as apposed to using</p>
@@ -69,11 +72,11 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="header px-[30px]  flex-col md:flex-row md:mt-[100px] flex items-center justify-between">
-                                    <div class="img-box my-[10px] basis-[50%]">
+                                <div class="header px-[30px]  flex-col md:flex-row h-full md:h-[100vh] flex items-center justify-center">
+                                    <div class="img-box md:basis-[50%]">
                                         <img class="w-full lg:w-[400px]" src="/images/banner-img.png" alt="">
                                     </div>
-                                    <div class="content basis-[50%]">
+                                    <div class="content md:basis-[50%]">
                                         <h1 class="text-4xl text-black font-bold font-fontSpicyRice my-[10px]">coffee</h1>
                                         <p class="text-white text-xl font-semibold my-[10px] md:text-red-500 font-fontDancingScript">Tasty Of DozeCafe</p>
                                         <p class="text-slate-600 my-[10px]">More or less normal distribution of letters as apposed to using</p>
@@ -89,8 +92,8 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="header px-[30px]  flex-col md:flex-row md:mt-[100px] flex items-center justify-between">
-                                    <div class="img-box my-[10px] md:basis-[50%]">
+                                <div class="header px-[30px]  flex-col md:flex-row h-full md:h-[100vh] flex items-center justify-between">
+                                    <div class="img-box md:basis-[50%]">
                                         <img class="w-full lg:w-[400px]" src="/images/banner-img.png" alt="">
                                     </div>
                                     <div class="content md:basis-[50%]">
@@ -135,7 +138,7 @@
                 <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="row-box my-[20px] md:flex md:flex-wrap md:justify-between">
-                        <div class="single-box content-hover basis-[100%] md:basis-[48%] xl:basis-[24%] my-[30px]">
+                        <div class="single-box content-hover basis-[100%] md:basis-[48%] lg:basis-[24%] my-[30px]">
                             <img class="w-full image-hover" src="/images/img-1.png" alt="">
                             <div class="content my-[10px] text-center">
                                 <h1 class="text-3xl font-bold xl:text-xl font-fontLobster">Types Of Coffee</h1>
@@ -145,7 +148,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="single-box content-hover basis-[100%] md:basis-[48%] xl:basis-[24%] my-[30px]">
+                        <div class="single-box content-hover basis-[100%] md:basis-[48%] lg:basis-[24%] my-[30px]">
                             <img class="w-full image-hover" src="/images/img-2.png" alt="">
                             <div class="content my-[10px] text-center">
                                 <h1 class="text-3xl font-bold xl:text-xl font-fontLobster">Bean varieties</h1>
@@ -155,7 +158,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="single-box content-hover basis-[100%] md:basis-[48%] xl:basis-[24%] my-[30px]">
+                        <div class="single-box content-hover basis-[100%] md:basis-[48%] lg:basis-[24%] my-[30px]">
                             <img class="w-full image-hover" src="/images/img-3.png" alt="">
                             <div class="content my-[10px] text-center">
                                 <h1 class="text-3xl font-bold xl:text-xl font-fontLobster">Coffee & Pastry</h1>
@@ -165,7 +168,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="single-box content-hover basis-[100%] md:basis-[48%] xl:basis-[24%] my-[30px]">
+                        <div class="single-box content-hover basis-[100%] md:basis-[48%] lg:basis-[24%] my-[30px]">
                             <img class="w-full image-hover" src="/images/img-4.png" alt="">
                             <div class="content my-[10px] text-center">
                                 <h1 class="text-3xl font-bold xl:text-xl font-fontLobster">Coffee To Go</h1>
@@ -179,7 +182,7 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="row-box my-[20px] md:flex md:flex-wrap md:justify-between">
-                        <div class="single-box content-hover basis-[100%] md:basis-[48%] xl:basis-[24%] my-[30px]">
+                        <div class="single-box content-hover basis-[100%] md:basis-[48%] lg:basis-[24%] my-[30px]">
                             <img class="w-full image-hover" src="/images/img-1.png" alt="">
                             <div class="content my-[10px] text-center">
                                 <h1 class="text-3xl font-bold xl:text-xl font-fontLobster">Types Of Coffee</h1>
@@ -189,7 +192,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="single-box content-hover basis-[100%] md:basis-[48%] xl:basis-[24%] my-[30px]">
+                        <div class="single-box content-hover basis-[100%] md:basis-[48%] lg:basis-[24%] my-[30px]">
                             <img class="w-full image-hover" src="/images/img-2.png" alt="">
                             <div class="content my-[10px] text-center">
                                 <h1 class="text-3xl font-bold xl:text-xl font-fontLobster">Bean varieties</h1>
@@ -199,7 +202,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="single-box content-hover basis-[100%] md:basis-[48%] xl:basis-[24%] my-[30px]">
+                        <div class="single-box content-hover basis-[100%] md:basis-[48%] lg:basis-[24%] my-[30px]">
                             <img class="w-full image-hover" src="/images/img-3.png" alt="">
                             <div class="content my-[10px] text-center">
                                 <h1 class="text-3xl font-bold xl:text-xl font-fontLobster">Coffee & Pastry</h1>
@@ -209,7 +212,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="single-box content-hover basis-[100%] md:basis-[48%] xl:basis-[24%] my-[30px]">
+                        <div class="single-box content-hover basis-[100%] md:basis-[48%] lg:basis-[24%] my-[30px]">
                             <img class="w-full image-hover" src="/images/img-4.png" alt="">
                             <div class="content my-[10px] text-center">
                                 <h1 class="text-3xl font-bold xl:text-xl font-fontLobster">Coffee To Go</h1>
@@ -223,7 +226,7 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="row-box my-[20px] md:flex md:flex-wrap md:justify-between">
-                        <div class="single-box content-hover basis-[100%] md:basis-[48%] xl:basis-[24%] my-[30px]">
+                        <div class="single-box content-hover basis-[100%] md:basis-[48%] lg:basis-[24%] my-[30px]">
                             <img class="w-full image-hover" src="/images/img-1.png" alt="">
                             <div class="content my-[10px] text-center">
                                 <h1 class="text-3xl font-bold xl:text-xl font-fontLobster">Types Of Coffee</h1>
@@ -233,7 +236,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="single-box content-hover basis-[100%] md:basis-[48%] xl:basis-[24%] my-[30px]">
+                        <div class="single-box content-hover basis-[100%] md:basis-[48%] lg:basis-[24%] my-[30px]">
                             <img class="w-full image-hover" src="/images/img-2.png" alt="">
                             <div class="content my-[10px] text-center">
                                 <h1 class="text-3xl font-bold xl:text-xl font-fontLobster">Bean varieties</h1>
@@ -243,7 +246,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="single-box content-hover basis-[100%] md:basis-[48%] xl:basis-[24%] my-[30px]">
+                        <div class="single-box content-hover basis-[100%] md:basis-[48%] lg:basis-[24%] my-[30px]">
                             <img class="w-full image-hover" src="/images/img-3.png" alt="">
                             <div class="content my-[10px] text-center">
                                 <h1 class="text-3xl font-bold xl:text-xl font-fontLobster">Coffee & Pastry</h1>
@@ -253,7 +256,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="single-box content-hover basis-[100%] md:basis-[48%] xl:basis-[24%] my-[30px]">
+                        <div class="single-box content-hover basis-[100%] md:basis-[48%] lg:basis-[24%] my-[30px]">
                             <img class="w-full image-hover" src="/images/img-4.png" alt="">
                             <div class="content my-[10px] text-center">
                                 <h1 class="text-3xl font-bold xl:text-xl font-fontLobster">Coffee To Go</h1>
@@ -415,10 +418,10 @@
             </div>
             <div class="box text-center">
                 <form action="">
-                    <input class="w-full md:w-[70%] my-[10px] bg-slate-200 py-2 px-2 rounded-xl content-hover hover:border-greenColor" type="text" placeholder="Your Name">
-                    <input class="w-full md:w-[70%] my-[10px] bg-slate-200 py-2 px-2 rounded-xl content-hover hover:border-greenColor" type="email" placeholder="Your Email">
-                    <input class="w-full md:w-[70%] my-[10px] bg-slate-200 py-2 px-2 rounded-xl content-hover hover:border-greenColor" type="number" placeholder="Your Phone">
-                    <input class="w-full md:w-[70%] my-[10px] bg-slate-200 py-6 px-2 rounded-xl content-hover hover:border-greenColor" type="text" placeholder="Massage">
+                    <input class="w-full md:w-[70%] my-[10px] bg-slate-200 border-2 border-slate-300 py-2 px-2 rounded-md content-hover hover:border-greenColor" type="text" placeholder="Your Name">
+                    <input class="w-full md:w-[70%] my-[10px] bg-slate-200 border-2 border-slate-300 py-2 px-2 rounded-md content-hover hover:border-greenColor" type="email" placeholder="Your Email">
+                    <input class="w-full md:w-[70%] my-[10px] bg-slate-200 border-2 border-slate-300 py-2 px-2 rounded-md content-hover hover:border-greenColor" type="number" placeholder="Your Phone">
+                    <input class="w-full md:w-[70%] my-[10px] bg-slate-200 border-2 border-slate-300 py-6 px-2 rounded-md content-hover hover:border-greenColor" type="text" placeholder="Massage">
                     <div class="btn-box text-center">
                         <input class="w-[150px] btn-hover" type="button" value="Send">
                     </div>
@@ -466,7 +469,7 @@
                 <a class="" href="#"><i class="fa-brands fa-twitter text-sm text-red-500 hover:text-yellowColor icon-hover border-2 border-greenColor rounded-full hover:border-yellowColor"></i></a>
             </div>
             <div class="copyright">
-                <p class="text-darkColorLight text-sm">&copy; 2020 All Rights Reseved. Design by Free html Templates</p>
+                <p class="text-darkColorLight text-sm">&copy; 2020 All Rights Reseved coffe website template</p>
             </div>
             <div class="social-link gap-2 hidden md:block">
                 <a class="" href="#"><i class="fa-brands fa-facebook text-sm text-red-500 hover:text-yellowColor icon-hover border-2 border-greenColor rounded-full hover:border-yellowColor"></i></a>
@@ -476,6 +479,13 @@
             </div>
         </div>
     </section>
+
+
+<!------------------ Scroll Up -------------->
+
+   <a href="" class="fixed right-4 bg-yellowColor shadow-sm inline-block px-4 py-2 rounded-full text-lg text-blackColor z-50 -bottom-1/2 hover:translate-y-1 ease-in duration-200" id="scroll-up">
+    <i class="fa-solid fa-arrow-up"></i>
+  </a>
    
 
 
@@ -490,6 +500,10 @@
 
 <!-- Fontawsome Kit -->
     <script src="https://kit.fontawesome.com/862c32b35b.js" crossorigin="anonymous"></script>
+
+
+<!-- Script Js Link -->
+ <script src="main.js"></script>
 
 </body>
 </html>

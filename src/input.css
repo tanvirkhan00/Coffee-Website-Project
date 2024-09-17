@@ -6,8 +6,11 @@
 @tailwind utilities;
 
 @layer base{
+    html{
+        @apply scroll-smooth; 
+    }
     section{
-        @apply pt-12 pb-4 md:pt-20 ;
+        @apply pt-10 pb-4 md:pt-10 ;
     }
     body {
         @apply font-fontSuse bg-slate-200;
@@ -18,10 +21,10 @@
         @apply border-b-4 border-transparent ease-linear duration-200 hover:border-yellowColor hover:text-brownColor
     }
     .header-btn {
-        @apply px-[40px] py-3 text-white font-semibold text-lg rounded-md bg-slate-800 ease-linear duration-200 hover:bg-coffeeColor
+        @apply px-[40px] py-3 text-white font-semibold text-lg rounded-md bg-slate-800 ease-linear duration-200 hover:bg-yellowColor hover:text-black
     }
     .content-hover {
-        @apply border-2 ease-linear duration-200 border-transparent rounded-md hover:border-yellowColor
+        @apply border-2 ease-linear duration-200 border-transparent rounded-md hover:border-greenColor
     }
     .icon-hover {
         @apply ease-linear duration-200 cursor-pointer hover:scale-125
@@ -30,7 +33,7 @@
         @apply ease-linear rounded-md duration-200 hover:scale-90
     }
     .btn-hover {
-        @apply text-lg font-semibold border-2 ease-linear duration-200 border-redColor px-8 py-2 rounded-md hover:bg-coffeeColor
+        @apply text-lg font-semibold border-2 ease-linear duration-200 border-redColor px-8 py-2 rounded-md hover:bg-greenColor
     }
     .customar-content {
         @apply border-2 border-transparent rounded-md ease-linear duration-200 hover:border-yellowColor
